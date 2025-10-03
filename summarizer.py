@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
-GROQ_API_KEY =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
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 def summarize_text(text: str) -> str:
     url = "https://api.groq.com/openai/v1/chat/completions"
     
